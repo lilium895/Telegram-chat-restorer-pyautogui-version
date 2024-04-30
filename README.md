@@ -1,4 +1,4 @@
-#Telegram chat restorer pyautogui version
+# Telegram chat restorer - pyautogui version
 
 Bonjour tout-le-monde! This project allows you to import your previously exported telegram chat into your telegram app.
 
@@ -9,11 +9,13 @@ This app works without using telegram bots. The messages will be recovered by re
 
 You have two pieces of code in this repository:
 
+
 html_to_text_pyautogui.py
 
 and
 
 pyautogui_recover.py
+
 
 
 The first one allows you to convert an HTML telegram back up into a whatsapp text version.
