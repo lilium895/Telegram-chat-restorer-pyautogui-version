@@ -22,7 +22,7 @@ The second one allows you to parse those whatsapp texts, you have previously cre
 The first thing you have to do is to convert your telegram chat backup into the Whatsapp text format.  
 There are several application in github you can use to do that.  
 If you have like me a Telegram back up in html format, you can use html_to_txt_pyautogui.py and follow the instructions.  
-Mine html files are called ...messages, ...messages1.  
+My html files are called ...messages, ...messages1.  
 
 Once the code has run, you will have in your user folder some files called _chat1, _chat2...  
 ![](Screenshot3.png)
