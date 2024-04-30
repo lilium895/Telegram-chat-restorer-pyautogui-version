@@ -36,7 +36,8 @@ Mine html files are called ...messages, ...messages1.
 
 
 Once the code has run, you will have in your user folder some files called _chat1, _chat2...
-
+![](Screenshot3.png)
+You should have something like that.
 
 2. <ins>Modify directories in pyautogui_recover</ins>
 
@@ -86,7 +87,7 @@ At the bottom left there is the python program that in the next step you will ha
 Pyautogui works by moving the mouse from telegram app to the other, and by researching and draggind the media from the allmedia folder.
 
  
-![](Screenshot12.png)
+![](Screenshot2.png)
 
 <font color="red">
 :warning:**!!!IMPORTANT!!!**:warning:
