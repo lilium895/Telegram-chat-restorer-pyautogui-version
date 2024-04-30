@@ -110,7 +110,7 @@ I haven't find a correction since it worked fine at the end for me.
 :warning: Hardware problems.  
 
 The code worked on my Windows 11, 8 gb ram, ssd laptop with fiber optic internet connection.  
-If you see that the code isn't working for you could it be a time issue.  
+If you see that the code isn't working for you, it could be a time issue.  
 In pyautogui_recover change time.sleep() with the time that works on your computer.  
 I put a sleeping time of 2 minutes for those media bigger than 8Mb, but you can change it.  
 
