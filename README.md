@@ -84,7 +84,7 @@ As I said before if something goes wrong move your mouse to the **TOP LEFT edge*
 
 It could happen sometimes that the code will run into some errors.  
 I suggest to always monitor that the backing up is working.  
-Here are two most common errors that will occurr.  
+Here are the most common errors that will occurr.  
 
 
 :warning: Remember to press Num Lock.  
