@@ -84,7 +84,7 @@ At the bottom right there is the allmedia folder. Set the folder with View Optio
 
 At the bottom left there is the python program that in the next step you will have to run with shift+enter.
 
-Pyautogui works by moving the mouse from telegram app to the other, and by researching and draggind the media from the allmedia folder.
+Pyautogui works by moving the mouse from telegram app to the other, and by researching and dragging the media from the allmedia folder.
 
  
 ![](Screenshot2.png)
