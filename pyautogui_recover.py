@@ -69,7 +69,12 @@ def search_for_media(media_name,user):
     time.sleep(1)
     pyautogui.press('shift')    
     pyautogui.press('enter')
-    media_size=os.path.getsize(f"C:\\Users\\gabri\\Desktop\\progetto telegram\\Lari definitivo\\Telegram\\allmedia\\{media_name}")
+'''
+IMPORTANT
+REPLACE C:\\Users\\pollicino\\Desktop\\allmedia with the path of the folder where all your media are
+leave \\{media_name} after
+'''
+    media_size=os.path.getsize(f"C:\\Users\\pollicino\\Desktop\\allmedia\\{media_name}")
     if media_size < 8000000:
         time.sleep(2)
     else:
