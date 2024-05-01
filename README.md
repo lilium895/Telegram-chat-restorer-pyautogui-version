@@ -20,13 +20,16 @@ The second one allows you to parse those whatsapp texts, you have previously cre
 ## <ins>From telegram format to whatsapp text format</ins>  
 
 The first thing you have to do is to convert your telegram chat backup into the Whatsapp text format.  
-There are several application in github you can use to do that.  
 If you have like me a Telegram back up in html format, you can use html_to_txt_pyautogui.py and follow the instructions.  
 My html files are called ...messages, ...messages1.  
 
 Once the code has run, you will have in your user folder some files called _chat1, _chat2...  
 ![](Screenshot3.png)
 You should have something like that.
+Sender name (tab) date and time (tab) text/or mediaelement (tab) eventually the mediaelement file name
+If you use other application on github to translate your telegram backup, remember that my whatsapp text divide each element of a message with 'tab'
+and, if there is a media in the message, there is instead of the text 'mediaelement' and after that 'tab' and the name of the media file.
+You probably have to change the code if you use other application.
 
 ## <ins>Modify directories in pyautogui_recover</ins>
 
