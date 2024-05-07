@@ -117,8 +117,8 @@ If you see that the code isn't working for you, it could be a time issue.
 In pyautogui_recover change time.sleep() with the time that works on your computer.  
 I put a sleeping time of 2 minutes for those media bigger than 8Mb, but you can change it.  
 
-You can also have problems by using a different OS. If it is so you have to change the positions of the pyautogui functions (search bar, writing bar..) in pyautogui_recover.py .  
-To find the new locations use pyautogui.position() (more information in https://pyautogui.readthedocs.io/en/latest/index.html).  
+You can also have problems by using a different OS. If it is so you have to change the positions of the pyautogui functions (search bar, writing bar..) 
+in pyautogui_recover.py . To find the new locations use pyautogui.position() (more information in https://pyautogui.readthedocs.io/en/latest/index.html).  
 
 
 🕑 Time  
