@@ -10,7 +10,7 @@ html_to_text_pyautogui.py
 and  
 pyautogui_recover.py  
 
-The first one allows you to convert an HTML telegram back up into a whatsapp text version.  
+The first one allows you to convert an HTML telegram back up into a whatsapp text version with few changes.  
 The second one allows you to parse those whatsapp texts, you have previously created, and automating the process of sending messages, media (I haven't tried stickers, which I didn't have) from the two users.  
 
 
