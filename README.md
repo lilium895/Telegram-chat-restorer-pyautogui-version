@@ -25,8 +25,8 @@ My html files are called ...messages, ...messages1.
 
 Once the code has run, you will have in your user folder some files called _chat1, _chat2...  
 ![](Screenshot3.png)
-You should have something like that.
-Sender name (tab) date and time (tab) text/or mediaelement (tab) eventually the mediaelement file name
+You should have something like that.  
+Sender name (tab) date and time (tab) text/or mediaelement (tab) eventually the mediaelement file name.
 If you use other application on github to translate your telegram backup, remember that my whatsapp text divide each element of a message with 'tab'
 and, if there is a media in the message, there is instead of the text 'mediaelement' and after that 'tab' and the name of the media file.
 You probably have to change the code if you use other application.
