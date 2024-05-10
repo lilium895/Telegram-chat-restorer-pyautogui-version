@@ -99,7 +99,7 @@ Pyautogui will use a hotkey to make the format of date and time, and Num Lock ha
 
 Sometimes the media that the app has to drag into the chat is a compress folder or a document.  
 The app could rarely double click and open the document or the folder.  
-I think the problem is in this lines of codes, in the definition of the function search_for_media:  
+I think the problem is in these lines of codes, in the definition of the function search_for_media:  
 
 57    time.sleep(1)  
 58    pyautogui.moveTo(x=1716, y=855)   
