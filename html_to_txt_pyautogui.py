@@ -123,9 +123,12 @@ def transform_html_to_whatsapp(html_file, counting):
     print('Transformation complete. The WhatsApp chat export is saved as {}'.format(chat_name))
 
 # Usage example
-print('Where are the html files located? Copy and paste the path file')
+print('Where are the html files located? Copy and paste the path of the folder in which there are the html files')
 messages_path=input()
 messages_path=messages_path.strip('\"')+'\\'
+
+print('How many html files do I have to process?')
+max_number=input()
 
 # message.html
 counter=1
@@ -133,7 +136,7 @@ file_path = f"{messages_path}messages.html"
 transform_html_to_whatsapp(file_path,counter)
 
 # messagesCOUNTER.html
-for counter in range(256):
+for counter in range(max_number):
     if counter == 1 or counter == 0: continue
     file_path = f"{messages_path}messages{counter}.html"
     transform_html_to_whatsapp(file_path,counter)
