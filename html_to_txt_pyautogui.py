@@ -136,7 +136,7 @@ file_path = f"{messages_path}messages.html"
 transform_html_to_whatsapp(file_path,counter)
 
 # messagesCOUNTER.html
-for counter in range(max_number):
+for counter in range(max_number+1):
     if counter == 1 or counter == 0: continue
     file_path = f"{messages_path}messages{counter}.html"
     transform_html_to_whatsapp(file_path,counter)
