@@ -17,9 +17,14 @@ The second one allows you to parse those whatsapp texts, you have previously cre
 # How to use?  
 
 
-## <ins>Installing the libraries</ins>
+## <ins>Installing Spyder and the libraries</ins>
+I'm using Spyder for this project but every IDE with python should work.
+Here is the link for Spyder:
 
-Before running the code type in the python prompt:
+https://www.spyder-ide.org/
+
+
+Before running the code type in the python console:
 
 pip install beautifulsoup4 
 
