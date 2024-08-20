@@ -20,9 +20,9 @@ The second one allows you to parse those whatsapp texts, you have previously cre
 ## <ins>Installing the libraries</ins>
 
 Before running the code type in the python prompt:
-pip install beautifulsoup4
-pip install pyautogui
-pip install pyperclip
+pip install beautifulsoup4 
+pip install pyautogui 
+pip install pyperclip 
 
 ## <ins>From telegram format to whatsapp text format</ins>  
 
