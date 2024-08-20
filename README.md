@@ -17,6 +17,13 @@ The second one allows you to parse those whatsapp texts, you have previously cre
 # How to use?  
 
 
+## <ins>Installing the libraries</ins>
+
+Before running the code type in the python prompt:
+pip install beautifulsoup4
+pip install pyautogui
+pip install pyperclip
+
 ## <ins>From telegram format to whatsapp text format</ins>  
 
 The first thing you have to do is to convert your telegram chat backup into the Whatsapp text format.  
