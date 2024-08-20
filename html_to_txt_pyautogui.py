@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 20 22:21:27 2024
+
+@author: gabri
+"""
+
+# -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 
-def transform_html_to_whatsapp(html_file, counting):
-    
+def transform_html_to_whatsapp(html_file, counting, schatname, restickers):
+    print(schatname+'\t'+restickers)
     
     # Read the HTML file
     with open(html_file, 'r', encoding='utf-8') as file:
@@ -74,8 +81,9 @@ def transform_html_to_whatsapp(html_file, counting):
                 media=link.get('href')
                 if 'https' not in media:
                     #remove chat_01 before file name
-                    i=media.index("chat_")
-                    media=media[i+8:]                
+                    if schatname == 'y':
+                        i=media.index("chat_")
+                        media=media[i+8:]                
                     #remove filetype before file name
                     i=media.index("/")
                     media=media[i+1:]
@@ -97,22 +105,23 @@ def transform_html_to_whatsapp(html_file, counting):
                     whatsapp_chat += whatsapp_message
                                                 
             
-            #stickers or animation not found            
-            status_emoji=media_element.find('div',class_='status details')
-            if status_emoji is not None:
-                sticker_emoji=status_emoji.text.strip()
-                description=media_element.find('div', class_='title bold')
-                whatismedia=description.text.strip()
-                #check if it's a location
-                if whatismedia == 'Location' or whatismedia==f'{media}':
-                    continue                
-                else:
-                    if time_str:
-                        whatsapp_message = f'{sender}\t{date_str}, {time_str}\t'
-                        if sticker_emoji is not None:                            
-                            whatsapp_message += f'{whatismedia}: {sticker_emoji}\n'
+            #stickers or animation not found  
+            if restickers == 'n':
+                status_emoji=media_element.find('div',class_='status details')
+                if status_emoji is not None:
+                    sticker_emoji=status_emoji.text.strip()
+                    description=media_element.find('div', class_='title bold')
+                    whatismedia=description.text.strip()
+                    #check if it's a location
+                    if whatismedia == 'Location' or whatismedia==f'{media}':
+                        continue                
+                    else:
+                        if time_str:
+                            whatsapp_message = f'{sender}\t{date_str}, {time_str}\t'
+                            if sticker_emoji is not None:                            
+                                whatsapp_message += f'{whatismedia}: {sticker_emoji}\n'
                             
-                            whatsapp_chat += whatsapp_message
+                                whatsapp_chat += whatsapp_message
                
 
     # Save the transformed chat to a file
@@ -123,7 +132,15 @@ def transform_html_to_whatsapp(html_file, counting):
     print('Transformation complete. The WhatsApp chat export is saved as {}'.format(chat_name))
 
 # Usage example
-print('Where are the html files located? Copy and paste the path of the folder in which there are the html files')
+print('Before starting I need some information about the exported chat\n When you exported the chat, did you exported other chats?\n Yes[Y]\tNo[N]')
+ischatname=input()
+ischatname=ischatname.lower()
+
+print('Did you export the stickers?\n Yes[Y]\tNo[N]')
+arestickers=input()
+arestickers=arestickers.lower()
+
+print('Ok let\'s start.\nWhere are the html files located? Copy and paste the path of the folder in which there are the html files')
 messages_path=input()
 messages_path=messages_path.strip('\"')+'\\'
 
@@ -133,12 +150,12 @@ max_number=int(input())
 # message.html
 counter=1
 file_path = f"{messages_path}messages.html"
-transform_html_to_whatsapp(file_path,counter)
+transform_html_to_whatsapp(file_path,counter,ischatname,arestickers)
 
 # messagesCOUNTER.html
 for counter in range(max_number+1):
     if counter == 1 or counter == 0: continue
     file_path = f"{messages_path}messages{counter}.html"
-    transform_html_to_whatsapp(file_path,counter)
+    transform_html_to_whatsapp(file_path,counter,ischatname,arestickers)
 
 print('The program has completed successfully. The text files should be located in the following path \n C:\\Users\\*YOUR_USER_NAME*')
