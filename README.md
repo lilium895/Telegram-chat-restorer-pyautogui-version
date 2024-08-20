@@ -21,7 +21,9 @@ The second one allows you to parse those whatsapp texts, you have previously cre
 
 Before running the code type in the python prompt:
 pip install beautifulsoup4 
-pip install pyautogui 
+
+pip install pyautogui  
+
 pip install pyperclip 
 
 ## <ins>From telegram format to whatsapp text format</ins>  
