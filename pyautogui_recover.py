@@ -117,7 +117,8 @@ leave\\_chat{number}.txt after
         
         '''
         IMPORTANT
-        REPLACE Sender name with the name of one of the two senders AS it is in the _chat.txt
+        REPLACE 'Sender name' with the name of one of the two senders AS it is in the _chat.txt
+        Leave the '' on the sides
         
         '''
         if 'Sender name' in sender:
