@@ -72,6 +72,7 @@ def search_for_media(media_name,user):
 '''
 IMPORTANT
 REPLACE C:\\Users\\pollicino\\Desktop\\allmedia with the path of the folder where all your media are
+REMEMBER TO REPLACE \ with \\
 leave \\{media_name} after
 '''
     media_size=os.path.getsize(f"C:\\Users\\pollicino\\Desktop\\allmedia\\{media_name}")
@@ -99,6 +100,7 @@ for number in range(1,number of text files):
 '''
 IMPORTANT
 replace C:\\Users\\pollicino with the path of the folder in which are the _chat files
+REMEMBER TO REPLACE \ with \\
 leave\\_chat{number}.txt after
 '''
     with open(f"C:\\Users\\pollicino\\_chat{number}.txt", 'r', encoding='utf-8') as file:
@@ -115,7 +117,7 @@ leave\\_chat{number}.txt after
         
         '''
         IMPORTANT
-        REPLACE Sender name with the name of one of the two senders
+        REPLACE Sender name with the name of one of the two senders AS it is in the _chat.txt
         
         '''
         if 'Sender name' in sender:
