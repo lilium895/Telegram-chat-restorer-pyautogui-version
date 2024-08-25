@@ -82,6 +82,14 @@ Pyautogui works by moving the mouse from telegram app to the other, and by resea
  
 ![](Screenshot2.png)
 
+It should automatically position the windows in the right place. But if it's not the case, you can be sure by looking out if the elements are in the right place:
+Using https://pyautogui.readthedocs.io/en/latest/mouse.html and using a 1920x1080 screen
+The rectangular tab in which messages are written should be for chat1 (548,603) for chat2 (1492,604)
+The searching tab of windows explorer should be in (1776,713), the searched media in (1716,855)
+The media will be drag for user1 in position (548,343) for user2 (1492,344)
+Look in https://pyautogui.readthedocs.io/en/latest/mouse.html if you have to change the code.
+Using pyautogui.position() you can find the location of your mouse and your elements.
+
 <font color="red">
 :warning:**!!!IMPORTANT!!!**:warning:  
 
